@@ -1,0 +1,22 @@
+1. The first step is to setup the Scanner in the runner class using import Scanner
+Using the scanner, we will welcome the user using a print statement and ask the user for the coordinate points and store it in a String variable
+
+2. In order to turn the string into an integer we will call a method from the LinearEquation class
+to remove the paranthesis and commas called CoordinateExtracter.
+          2A. The method would would first take the length of the
+          coordinates and how many characters it contains. Next we will uses the String method
+          to find the indexes of the parenthesis and the comma.
+
+3. Now that we have the indexes of the () and the comma, we will setup 4 variables 2 representing the x coordinates
+and the other 2 representing the y coordinate. Once we extract the x and the y and turn them into integers
+we will begin making the LinearEquation object
+
+4. First thing in the object will be the method calculating the slope called SlopeCalc
+ 4a. Will be rounded stored in a variable called m
+ 
+5. Next we will make a method called YInterceptCalc that will use the input to calculate the y intercept
+ 5a. The result will be rounded and stored in a variable called b
+
+ 6. After creating these two methods we will create a constructor called LineEquation
+  6A. This constructor will take b and m as parameters and use them to creae a y=mx+b equation
+
