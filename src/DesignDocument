@@ -1,22 +1,67 @@
-1. The first step is to setup the Scanner in the runner class using import Scanner
+
+Step1. The first step is to setup the Scanner in the runner class using import Scanner
 Using the scanner, we will welcome the user using a print statement and ask the user for the coordinate points and store it in a String variable
 
-2. In order to turn the string into an integer we will call a method from the LinearEquation class
+Step2. In order to turn the string into an integer we will call a method from the LinearEquation class
 to remove the paranthesis and commas called CoordinateExtracter.
-          2A. The method would would first take the length of the
-          coordinates and how many characters it contains. Next we will uses the String method
-          to find the indexes of the parenthesis and the comma.
 
-3. Now that we have the indexes of the () and the comma, we will setup 4 variables 2 representing the x coordinates
+
+Step3. Now that we have the indexes of the () and the comma, we will setup 4 variables 2 representing the x coordinates
 and the other 2 representing the y coordinate. Once we extract the x and the y and turn them into integers
 we will begin making the LinearEquation object
+------------------------------------------------------------------------------------------------
+LinearEquation object
+Instance Variables:
+1.  private int x1
+ 1a. The integer will store the first x value
 
-4. First thing in the object will be the method calculating the slope called SlopeCalc
- 4a. Will be rounded stored in a variable called m
- 
-5. Next we will make a method called YInterceptCalc that will use the input to calculate the y intercept
- 5a. The result will be rounded and stored in a variable called b
+2. private int y1
+ 2a. The integer will store the first y value
 
- 6. After creating these two methods we will create a constructor called LineEquation
-  6A. This constructor will take b and m as parameters and use them to creae a y=mx+b equation
+3. private int x2
+ 3a. This integer will store the second x value in the second coordinate point
+
+4. private int y2
+ 4a. The integer will store the second y value
+
+ Methods:
+
+1. public double SlopeCalc(double x1, double x2, double x3, double x4)
+ 1a. Will be rounded stored in a variable called double m
+
+2. public double YInterceptCalc()
+ 2a. The result will be rounded and stored in a variable called double b
+
+3. public double Distance(double x1, double x2, double y1, double y2)
+ 3a. The result will be rounded and will calculate the distance between the coordinate points
+
+ 4. public String toString()
+  4a. This method will display the information the user needs to know
+
+ 5. public int CoordinateExtractor()
+   5a. This method will use string methods such as indexOf, length, and substring to extract the coordinates
+   5b. The method would would first take the length of the coordinates and how many characters it contains.
+   5c. Next we will uses the String method to find the indexes of the parenthesis and the comma.
+
+6. public String CoordinateCalc(double x)
+  6a. The method will use the x coordinate in the parameter and calculate the coordinate poitns using the linear equation.
+
+Constructor:
+  public LinearEquationCalc(double m, double b)
+  A. This constructor will take b and m as parameters and use them to create a y=mx+b equation
+  B. m values that are decimals will be turned into fractions
+  C. b values will remain as decimals
+------------------------------------------------------------------------------------------------
+Step4.  The toString method will be used in the Runner class to display
+    x and y coordinates of both coordinate points
+    the linear equation
+    the slope
+    the y intercept
+    the distance between the two points
+Step5. Next, a print statement will ask the user for an x value. the method CoordinateCalc will be used
+to print out the coordinate
+
+
+
+
 
