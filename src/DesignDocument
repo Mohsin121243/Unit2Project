@@ -1,4 +1,4 @@
-
+Runner class p1
 Step1. The first step is to setup the Scanner in the runner class using import Scanner
 Using the scanner, we will welcome the user using a print statement and ask the user for the coordinate points and store it in a String variable
 
@@ -47,17 +47,19 @@ Instance Variables:
   6a. The method will use the x coordinate in the parameter and calculate the coordinate poitns using the linear equation.
 
 Constructor:
-  public LinearEquationCalc(double m, double b)
-  A. This constructor will take b and m as parameters and use them to create a y=mx+b equation
+  public LinearEquationCalc(int x1, int x2, int y1, int y2)
+  A. This constructor will take the x and y values of the coordinates as parameters and use them to create a y=mx+b equation
   B. m values that are decimals will be turned into fractions
   C. b values will remain as decimals
 ------------------------------------------------------------------------------------------------
+Runner class p2
 Step4.  The toString method will be used in the Runner class to display
     x and y coordinates of both coordinate points
     the linear equation
     the slope
     the y intercept
     the distance between the two points
+
 Step5. Next, a print statement will ask the user for an x value. the method CoordinateCalc will be used
 to print out the coordinate
 
