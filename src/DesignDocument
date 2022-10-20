@@ -2,8 +2,8 @@ Runner class p1
 Step1. The first step is to setup the Scanner in the runner class using import Scanner
 Using the scanner, we will welcome the user using a print statement and ask the user for the coordinate points and store it in a String variable
 
-Step2. In order to turn the string into an integer we will call a method from the LinearEquation class
-to remove the paranthesis and commas called CoordinateExtracter.
+Step2. In order to turn the string into an integer we will call String Methods such as indexOf and substring to remove the
+paranthesis and commas.
 
 
 Step3. Now that we have the indexes of the () and the comma, we will setup 4 variables 2 representing the x coordinates
@@ -24,26 +24,25 @@ Instance Variables:
 4. private int y2
  4a. The integer will store the second y value
 
+5. private String slopeInFraction
+ 5a. Will represent the slope in fraction
+
+6. private double regularSlope
+ 6a. Will keep the double value of slope
+
  Methods:
 
-1. public double SlopeCalc(double x1, double x2, double x3, double x4)
+1. public double slopeCalc(double x1, double x2, double x3, double x4)
  1a. Will be rounded stored in a variable called double m
 
-2. public double YInterceptCalc()
+2. public double YIntercept()
  2a. The result will be rounded and stored in a variable called double b
 
 3. public double Distance(double x1, double x2, double y1, double y2)
  3a. The result will be rounded and will calculate the distance between the coordinate points
 
- 4. public String toString()
-  4a. This method will display the information the user needs to know
 
- 5. public int CoordinateExtractor()
-   5a. This method will use string methods such as indexOf, length, and substring to extract the coordinates
-   5b. The method would would first take the length of the coordinates and how many characters it contains.
-   5c. Next we will uses the String method to find the indexes of the parenthesis and the comma.
-
-6. public String CoordinateCalc(double x)
+6. public String usersNewCoordinate(double x)
   6a. The method will use the x coordinate in the parameter and calculate the coordinate poitns using the linear equation.
 
 Constructor:
@@ -53,14 +52,14 @@ Constructor:
   C. b values will remain as decimals
 ------------------------------------------------------------------------------------------------
 Runner class p2
-Step4.  The toString method will be used in the Runner class to display
+Step4.  We will use multiple print statements to print the following:
     x and y coordinates of both coordinate points
     the linear equation
     the slope
     the y intercept
     the distance between the two points
 
-Step5. Next, a print statement will ask the user for an x value. the method CoordinateCalc will be used
+Step5. Next, a print statement will ask the user for an x value. the method usersNewCoordinate will be used
 to print out the coordinate
 
 
