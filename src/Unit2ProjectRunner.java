@@ -11,16 +11,15 @@ public class Unit2ProjectRunner {
     int y1 = Integer.parseInt(firstCoordinate.substring(firstCoordinate.indexOf(",")+1, firstCoordinate.indexOf(")")));
     int x2 = Integer.parseInt(secondCoordinate.substring(1,secondCoordinate.indexOf(",")));
     int y2 = Integer.parseInt(secondCoordinate.substring(secondCoordinate.indexOf(",")+1, secondCoordinate.indexOf(")")));
-        LinearEquation equation = new LinearEquation(x1,x2,y1,y2);
+    LinearEquation equation = new LinearEquation(x1,x2,y1,y2);
 
- System.out.println("");
- System.out.println("Here are the original coordiante point:  First Coordinate: "+ firstCoordinate + "   Second coordiante: " + secondCoordinate);
-System.out.println("Here is the slope:"+equation.slopeCalc());
-System.out.println("Here is the y-intercept "+equation.yIntercept());
-System.out.println("Here is the distance: "+equation.distance());
-System.out.println("Enter an x value to get a full coordinate: ");
-int usersXValues = s.nextInt();
-System.out.println("New coordinate: "+ equation.usersNewCoordinate(usersXValues));
+    //This is the toString that'll display all the values
+    equation.toString();
+
+    System.out.println("Enter an x value to get a full coordinate: ");
+    int usersXValues = s.nextInt();
+    System.out.println("New coordinate: ");
+    System.out.println(equation.usersNewCoordinate(usersXValues));
 
 
 

@@ -45,6 +45,9 @@ Instance Variables:
 6. public String usersNewCoordinate(double x)
   6a. The method will use the x coordinate in the parameter and calculate the coordinate poitns using the linear equation.
 
+7. public String toString()
+ 7a. Will display all the coordinate info
+
 Constructor:
   public LinearEquationCalc(int x1, int x2, int y1, int y2)
   A. This constructor will take the x and y values of the coordinates as parameters and use them to create a y=mx+b equation
@@ -52,7 +55,7 @@ Constructor:
   C. b values will remain as decimals
 ------------------------------------------------------------------------------------------------
 Runner class p2
-Step4.  We will use multiple print statements to print the following:
+Step4.  We will use the toString method to print the following:
     x and y coordinates of both coordinate points
     the linear equation
     the slope
